@@ -75,6 +75,7 @@
 			
 				<!-- AUTHORS: DEFINE CONTENT ON YOUR FIRST SLIDE --> 
 				<section >
+				
 					<section>
 					<h1>Introduction to GIS</h1>
 				<!-- AUTHORS: PUT YOUR PRESENTER NOTES HERE: -->
@@ -82,7 +83,33 @@
 					Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit »S« on your keyboard).
 				</aside>
 					</section>
-				
+					
+					<section>
+						<h1>Overview course content</h1> 
+						<h2>Introduction to GIS</h2>
+						<table>
+							<tr><td><b>1</b></td><td><b><a href="#/1">Basics of GIS</a></b></td><td>2</td></tr>
+							<tr><td><b>2</b></td><td><b><a href="#/4">Spatial data</a></b></td><td>4</td></tr>
+							<tr><td><b>3</b></td><td><b><a href="#/9">Spatial reference systems</a></b></td><td>3</td></tr>
+							<tr><td><b>4</b></td><td><b><a href="#/13">Spatial data basic analysis</a></b></td><td>3</td></tr>
+							<tr><td><b>5</b></td><td><b><a href="#/17">Data visualization</a></b></td><td>2</td></tr>
+						</table>
+					</section>
+					
+					<section>
+						<h1>Overview course content</h1> 
+						<h2>Introduction to GIS</h2>
+						<p><em>Learning outcomes:</em></p>
+						<ul><li>Understand the basic concepts of Geographic Information Systems</li>
+						<li>Define terms related to raster and vector data models</li>
+						<li>Compare vector and raster data models</li>
+						<li>Understand the difference between geographic and projected coordinate systems</li>
+						<li>Select spatial objects using attribute and spatial queries</li>
+						<li>Perform simple analysis with geoprocessing tools</li>
+						<li>List map elements and basic principles of map creation</li>
+						<li>Create a thematic map using different methods of symbolization</li></ul>
+					</section>
+					
 				</section>
 				
 				
@@ -131,6 +158,140 @@
 			
 				
 				<!-- AUTHORS: DEFINE SECTIONS WITHIN A SECTION TO GET VERTICAL SLIDES:--> 
+				
+				<!--- UNIT 1 STARTS HERE --->
+				
+				<section>
+					<h1>1 | Basics of GIS</h1>
+					<h2>Introduction to GIS</h2>
+					<table>
+						<tr><td><b>#</b></td><td><b>Content</b></td></tr>
+						<tr><td><b>1.1</b></td><td><b><a href="#/2">What is GIS?</a></b></td></tr>
+						<tr><td><b>1.2</b></td><td><b><a href="#/3">Uses of GIS</a></b></td></tr>
+					</table>
+					<br><a href="#/0/1">
+						<img style="background-color: transparent; box-shadow: none;"  src="resources\arrow.png" alt="Arrow">
+					</a>
+				</section>
+				
+				<section>
+				
+					<section > 
+						<h1>1.1 | What is GIS?</h1> 
+				</section>
+					
+					<section>
+						<img style="background-color: transparent; box-shadow: none;" height="600" src="resources\gis.png" alt="Fig.GIS">
+					</section>
+					
+					<section>
+						<h2>GIS definition</h2>
+						<br><p><b><font style="color:#ea9b2d">Geographic Information System (GIS)</font></b></p>
+						<p>"is a computer system capable of capturing, storing, analyzing, and displaying geographically referenced information; that is, data identified according to location. 
+						Practitioners also define a GIS as including the procedures, operating personnel, and spatial data that go into the system."</p>
+						<citation>USGS (United States Geological Survey)</citation>
+						<p>"is a computer-based tool for mapping and analyzing things that exist and events that happen on earth. 
+						GIS technology integrates common database operations such as query and statistical analysis with the unique visualization and geographic analysis benefits offered by maps."</p>
+						<citation>ESRI</citation>
+						<p>The spatial (geographic) part differentiates a GIS from a standard computer database.</p>
+						<aside class="notes">A GIS is designed to efficiently capture, store, update, manipulate, analyze, and display all forms of geographically referenced information.
+						</aside>
+					</section>
+					
+					<section>
+						<h2>GIS components</h2>
+						<br><p>A GIS consists of five key components: hardware, software, data, people, and methods.</p>
+						<br><table>
+							<td class="fragment"><img style="background-color: transparent; box-shadow: none;" src="resources\gis_component_hardware.png" alt="Fig.Hardware"></td>
+							<td class="fragment"><img style="background-color: transparent; box-shadow: none;" src="resources\gis_component_software.png" alt="Fig.Software"></td>
+							<td class="fragment"><img style="background-color: transparent; box-shadow: none;" src="resources\gis_component_data.png" alt="Fig.Data"></td>
+							<td class="fragment"><img style="background-color: transparent; box-shadow: none;" src="resources\gis_component_people.png" alt="Fig.People"></td>
+							<td class="fragment"><img style="background-color: transparent; box-shadow: none;" src="resources\gis_component_tools.png" alt="Fig.Methodes_Tools"></td>
+						</table>
+						<aside class="notes">
+						Hardware (Hardware usually means the computer on which a GIS operates.) 
+						Software (GIS software provides the functions and tools needed to store, analyze, and display geographic information.)
+						Data (The GIS data consists of any data bearing a definable relationship to space, including any data about things and events that occur in nature.)
+						People (GIS technology is of limited value without the people who manage the system and develop plans for applying it to real world problems. GIS users range from technical specialists who design and maintain the system to those who use it to help them perform their everyday work.) 
+						Methods (A GIS operates according to a well-designed plan and business rules, which are the models and operating practices unique to each organization.)
+						</aside>
+					</section>
+					
+					<section>
+						<h2>GIS: main idea</h2>
+						<br><img style="background-color: transparent; box-shadow: none;" src="resources\gis_schema_background.jpg" alt="Fig.GIS_Schema">
+						<p>The main goal of GIS is to provide <em>spatial</em> information to decision makers.</p>
+						<aside class="notes">
+						From real world to GIS: modelling and using different data sources (data that represent elements of real world), GIS 4 basic types of function according to the user's needs and requirements, different types of output information, information linked to knowledge and experience can provide a basis for decision making 
+						</aside>
+					</section>
+					
+					<section>
+						<h2>Data vs. Information</h2>
+						<br><p><b><font style="color:#ea9b2d">Data</font></b> means simply facts or figures - pieces of information, but not information itself.</p>
+						<p>Data is collected and stored in databases. When data are processed, interpreted, organized, structured or presented so as to make them meaningful or useful, they are called <font style="color:#ea9b2d"><b>information</font></b>. 
+						Information provides context for data.</p>
+						<p>In a GIS, spatial analysis and modelling are the main source of information.</p>
+						<p><b><font style="color:#ea9b2d">Spatial analysis</font></b> - a set of methods and tools for performing operations on spatial data in order to obtain additional information.</p>
+						<aside class="notes">
+						Explain: the difference between data and information.  
+						</aside>
+					</section>
+				
+				</section>
+				
+				<section>
+					
+					<section>
+						<h1>1.2 | Uses of GIS</h1>
+					</section>	
+					
+					<section>
+						<h2>Software</h2>
+						<p>Geospatial software and tools:</p>
+						<ul><li><b><font style="color:#83d6f2">Desktop GIS</font></b> (QGIS, SAGA GIS, GRASS GIS, ILWIS, IDRISI, Esri products: ArcGIS, ArcMap, ArcGlobe, GeoMedia, MapInfo, Bentley Systems: MicroStation, ENVI, ERDAS IMAGINE)</li>
+						<li><b><font style="color:#83d6f2">GIS as a service</font></b> (ArcGIS Online, Mapbox, OpenStreetMap, Google Maps, Apple Maps, Here Maps, Bing Maps)</li>
+						<li><b><font style="color:#83d6f2">Spatial database management systems</font></b> (MySQL, Oracle Spatial, Microsoft SQL Server, PostgreSQL)</li>
+						<li><b><font style="color:#83d6f2">Map servers</font></b> (Geoserver, MapServer, Mapnik)</li></ul>
+						<br><br>
+						<table><tr><td style="text-align: center" width="150">
+						<img height="100" style="background-color: transparent; box-shadow: none;"  src="resources\qgis_logo.png" alt="Fig.QGIS" /></td>
+						<td><img style="background-color: transparent; box-shadow: none;"  src="resources\software.png" alt="Fig.Software"></td></tr>
+						</table>
+					</section>
+					
+					<section>
+						<h2>Fields of GIS usage</h2>
+						<table>
+						<td><img style="background-color: transparent; box-shadow: none;" src="resources\gis_example.png" alt="Fig.GIS_example"></td>
+						<td><ul><li>urban planning</li>
+						<li>environment protection and management</li>
+						<li>land use monitoring</li>
+						<li>agriculture</li>
+						<li>transportation/logistics</li>
+						<li>emergency management</li>
+						<li>network infrastructure management</li>
+						<li>tourism</li>
+						<li>...</li></td>
+						</table>
+					</section>
+					
+					<section>
+						<h2>Advantages of GIS</h2>
+						<br><ul><li>Ability to view, visualize and interpret data in the form of maps, charts and reports - relationhips and trends easy to see and understand</li>
+						<li>Improved decision making and problems solving through specific and detailed information regarding locations of features and phenomena</li>
+						<li>Reduce costs and increase efficiency</li>
+						<li>Improved communication between organisations or departments</li>
+						</ul>
+					</section>
+					
+				</section>					
+								
+				<!--- UNIT 1 ENDS HERE --->
+				
+					
+					
+					
 				<section id="EO">
 					<section > 
 						<h2>Earth observation (EO)</h2> 
